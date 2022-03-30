@@ -1,3 +1,8 @@
+/*
+* jquery win-prize plugin to display a game for user to choose a chest and see if they
+* are a winner.
+*/
+
 (function ($) {
     
     $.fn.winPrize = function(options){
