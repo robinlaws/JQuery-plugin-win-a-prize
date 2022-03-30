@@ -5,7 +5,8 @@ Win a prize plugin will allow a user to add a section to a website in which the 
 The plugin will require the user to enter a section element with a div id: “game”, and once the plugin is called it will add this section to the website as described above.
 
 The images and js folder should be saved in the same directory as your html index file.
-Once these folders have been saved in your directory, you can call the plugin in your javascript file with: $(“#game”).winPrize();
+Once these folders have been saved in your directory, you can call the plugin in your javascript file with: 
+•	$(“#game”).winPrize();
 
 Files required for this plugin from html are as follows:
 •	Plugin javascript file: “js/jquery.win-prize.js”
@@ -13,10 +14,6 @@ Files required for this plugin from html are as follows:
 •	    <script src = "https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 •	    <script src = "js/jquery.win-prize.js"></script
 
-
-
-Folder directory:
- 
 index.html: your html file which includes:
 <section>
   <div id="game"></div>
