@@ -26,7 +26,7 @@ Files required for this plugin from html are as follows:
 NOTE: winner.html is the default page which the form will submit to which only displays a short message: “Check your email for your prize!”
 
 
-CUSTOMIZABLE PROPERTIES:
+_**CUSTOMIZABLE PROPERTIES:**_
 
 
 •	**border**: Border around the entire game section 
