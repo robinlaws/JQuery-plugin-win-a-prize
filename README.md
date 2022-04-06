@@ -25,7 +25,8 @@ Once these folders have been saved in your directory, you can call the plugin in
                   |--index.html (your html page to display game)
                   ├──win_js 
                   │     ├──jquery.win-prize.js  
-                  │     └──winner.html (optional html shown as default if user wins and enters email)
+                  │     └──winner.html (optional html shown after winner has entered email.
+                  │     ├──win_style.css (used for keyframe animation)   
                   ├──win_images
                         └──closedchest.png
                         └──emptychest.png
@@ -38,6 +39,7 @@ Files required for this plugin from html are as follows:
 
 •       Plugin javascript file: “win_js/jquery.win-prize.js"  <script src = "win_js/jquery.win-prize.js"></script>
 
+•       Plugin css file: “win_js/win_style.css"  <link href="win_js/win_style.css" rel="stylesheet">
 
 
 NOTE: winner.html is the default page which the form will submit to which only displays a short message: “Check your email for your prize!”
@@ -49,11 +51,13 @@ _**CUSTOMIZABLE PROPERTIES:**_
 •	**border**: Border around the entire game section 
         **default**: 10px solid black
         
-•	**background**: background color for entire section 
-        **default**: rgb(202,208,214)
+•	**background**: background color for entire section. Animation is set in css   to fade in and fade out colors. The color change can be chosen within the keyframe colorChangeGame in the css.  
+        **default**: black
+        TO
+        **default of css**: rgb(188, 139, 33)
         
 •	**imageBorder**: border around treasure chest images 
-        **default**: 5px solid #555
+        **default**: none
         
 •	**imageHeight**: height of treasure chest image 
         **default**: 100px
@@ -64,8 +68,10 @@ _**CUSTOMIZABLE PROPERTIES:**_
 •	**captionColor**: color of text under the game images
         **default**: rgb(202,208,214)
         
-•	**captionBackground**: background of caption text
-        **default**: black
+•	**captionBackground**: background of caption text. Animation is set in css to fade in and fade out colors. Color change can be chosen within the keyframe colorChangeText in the css.
+        **default**: black 
+        TO
+        **default of css**: rgb(227, 10, 10)
         
 •	**numOfChests**: number of chests displayed
         **default**: 10
@@ -78,3 +84,7 @@ _**CUSTOMIZABLE PROPERTIES:**_
         
 •	**losingCaption**: caption displayed if user does not win
         **default**: SORRY, NOT A WINNER! BETTER LUCK NEXT TIME!
+
+•	**textFont**: caption text font
+        **default**: Courier New
+
