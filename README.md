@@ -17,6 +17,7 @@ Once these folders have been saved in your directory, you can call the plugin in
 directory:
 
 yourproject
+
   ├──index.html (your html page to display game)
   
   ├──win_js
