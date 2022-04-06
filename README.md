@@ -18,12 +18,19 @@ directory:
 
 yourproject
   ├──index.html (your html page to display game)
+  
   ├──win_js
+  
   │  ├──jquery.win-prize.js
+  
   │  └──winner.html (optional html shown as default if user wins and enters email)
+  
   ├──win_images
+  
       └──closedchest.png
+      
       └──emptychest.png
+      
       └──winningchest.png
 
 Files required for this plugin from html are as follows:
