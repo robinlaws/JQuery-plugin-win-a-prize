@@ -25,26 +25,37 @@ Files required for this plugin from html are as follows:
 
 NOTE: winner.html is the default page which the form will submit to which only displays a short message: “Check your email for your prize!”
 
+
 CUSTOMIZABLE PROPERTIES:
-•	border: Border around the entire game section
+•	**border**: Border around the entire game section
         default: 10px solid black
-•	background: background color for entire section
+        
+•	**background**: background color for entire section
         rgb(202,208,214)
-•	imageBorder: border around treasure chest images
+        
+•	**imageBorder**: border around treasure chest images
         default: 5px solid #555
-•	imageHeight: height of treasure chest image
+        
+•	**imageHeight**: height of treasure chest image
         default: 100px
-•	imageWidth: width of treasure chest image
+        
+•	**imageWidth**: width of treasure chest image
         default 100px
-•	captionColor: color of text under the game images
+        
+•	**captionColor**: color of text under the game images
         default: rgb(202,208,214)
-•	captionBackground: background of caption text
+        
+•	**captionBackground**: background of caption text
         default: black
-•	numOfChests: number of chests displayed
+        
+•	**numOfChests**: number of chests displayed
         default: 10
-•	gethtml: address to send form submit to (name and email)
+        
+•	**gethtml**: address to send form submit to (name and email)
         default: js/winner.html
-•	winningCaption: caption displayed if user is a winner
+        
+•	**winningCaption**: caption displayed if user is a winner
         default: CONGRATULATIONS!
-•	losingCaption: caption displayed if user does not win
+        
+•	**losingCaption**: caption displayed if user does not win
         default: SORRY, NOT A WINNER! BETTER LUCK NEXT TIME!
