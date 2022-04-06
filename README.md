@@ -14,25 +14,22 @@ The win_images and win_js folder should be saved in the same directory as your h
 
 Once these folders have been saved in your directory, you can call the plugin in your javascript file as described above.
 
-directory:
 
-yourproject
+                main directory: index.html (your html file), win_js (folder), win_images (folder)
 
-  ├──index.html (your html page to display game)
-  
-  ├──win_js 
-  
-  │     ├──jquery.win-prize.js
-  
-  │     └──winner.html (optional html shown as default if user wins and enters email)
-  
-  ├──win_images
-  
-        └──closedchest.png
-      
-        └──emptychest.png
-      
-        └──winningchest.png
+                win_js: jquery.win-prize.js (plugin js code), winner.html (default page if user wins and inputs email)
+                
+                win_images: closedchest.png, emptychest.png, winningchest.png
+
+                yourproject: 
+                  |--index.html (your html page to display game)
+                  ├──win_js 
+                  │     ├──jquery.win-prize.js  
+                  │     └──winner.html (optional html shown as default if user wins and enters email)
+                  ├──win_images
+                        └──closedchest.png
+                        └──emptychest.png
+                        └──winningchest.png
 
 Files required for this plugin from html are as follows:
 
