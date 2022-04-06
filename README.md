@@ -27,35 +27,35 @@ NOTE: winner.html is the default page which the form will submit to which only d
 
 
 CUSTOMIZABLE PROPERTIES:
-•	**border**: Border around the entire game section
-        default: 10px solid black
+•	**border**: Border around the entire game section 
+        **default**: 10px solid black
         
-•	**background**: background color for entire section
-        rgb(202,208,214)
+•	**background**: background color for entire section 
+        **default**: rgb(202,208,214)
         
-•	**imageBorder**: border around treasure chest images
-        default: 5px solid #555
+•	**imageBorder**: border around treasure chest images 
+        **default**: 5px solid #555
         
-•	**imageHeight**: height of treasure chest image
-        default: 100px
+•	**imageHeight**: height of treasure chest image 
+        **default**: 100px
         
 •	**imageWidth**: width of treasure chest image
-        default 100px
+        **default**: 100px
         
 •	**captionColor**: color of text under the game images
-        default: rgb(202,208,214)
+        **default**: rgb(202,208,214)
         
 •	**captionBackground**: background of caption text
-        default: black
+        **default**: black
         
 •	**numOfChests**: number of chests displayed
-        default: 10
+        **default**: 10
         
 •	**gethtml**: address to send form submit to (name and email)
-        default: js/winner.html
+        **default**: js/winner.html
         
 •	**winningCaption**: caption displayed if user is a winner
-        default: CONGRATULATIONS!
+        **default**: CONGRATULATIONS!
         
 •	**losingCaption**: caption displayed if user does not win
-        default: SORRY, NOT A WINNER! BETTER LUCK NEXT TIME!
+        **default**: SORRY, NOT A WINNER! BETTER LUCK NEXT TIME!
