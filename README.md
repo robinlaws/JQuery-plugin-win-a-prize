@@ -10,16 +10,28 @@ The plugin will require a section or div element in which they will call the fun
 
 Once the plugin is called it will add this section to the website as described above.
 
-The win_images and win_js folder should be saved in the same directory as your html index file.
-Once these folders have been saved in your directory, you can call the plugin in your javascript file. (shown above)
+The win_images and win_js folder should be saved in the same directory as your html file that will display the section.
 
+Once these folders have been saved in your directory, you can call the plugin in your javascript file as described above.
+
+directory:
+
+yourproject
+  ├──index.html (your html page to display game)
+  ├──win_js
+  │  ├──jquery.win-prize.js
+  │  └──winner.html (optional html shown as default if user wins and enters email)
+  ├──win_images
+      └──closedchest.png
+      └──emptychest.png
+      └──winningchest.png
 
 Files required for this plugin from html are as follows:
 
 
 •	Jquery javascript (file/url): <script src = "https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> (or any jquery link/file)
 
-•       Plugin javascript file: “js/jquery.win-prize.js"  <script src = "js/jquery.win-prize.js"></script>
+•       Plugin javascript file: “win_js/jquery.win-prize.js"  <script src = "win_js/jquery.win-prize.js"></script>
 
 
 
