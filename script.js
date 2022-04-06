@@ -1,1 +1,3 @@
-$("#game").winPrize();
+$("#winPrize").winPrize({
+    numOfChests: 3
+});

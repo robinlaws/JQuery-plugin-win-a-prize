@@ -2,25 +2,22 @@
 
 Win a prize plugin will allow a user to add a section to a website in which the user can choose a treasure chest to see if it is the winning chest. If it is a winning chest, it will display a winner image and show a button to claim the prize. If it is not the winning chest, it will display a non-winning image and caption.
 
-The plugin will require the user to enter a section element with a div id: “game”, and once the plugin is called it will add this section to the website as described above.
+The plugin will require a section or div element in which they will call the function: winPrize(); 
+        ex:
+                add <section id="winPrize"><section> in html
+                in js script, call $("#winPrize).winPrize();
 
-The images and js folder should be saved in the same directory as your html index file.
-Once these folders have been saved in your directory, you can call the plugin in your javascript file with: 
-•	$(“#game”).winPrize();
+Once the plugin is called it will add this section to the website as described above.
+
+The win_images and win_js folder should be saved in the same directory as your html index file.
+Once these folders have been saved in your directory, you can call the plugin in your javascript file. (shown above)
+
 
 Files required for this plugin from html are as follows:
-•	Plugin javascript file: “js/jquery.win-prize.js”
-•	Jquery javascript (file/url)
-•	    <script src = "https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-•	    <script src = "js/jquery.win-prize.js"></script
+•	Jquery javascript (file/url): <script src = "https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+•       Plugin javascript file: “js/jquery.win-prize.js"  <script src = "js/jquery.win-prize.js"></script>
 
-index.html: your html file which includes:
-<section>
-  <div id="game"></div>
-</section>
 
-Script.js: your javascript file which calls:
- $("#game").winPrize();
 
 NOTE: winner.html is the default page which the form will submit to which only displays a short message: “Check your email for your prize!”
 

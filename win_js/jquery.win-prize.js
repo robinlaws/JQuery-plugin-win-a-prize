@@ -22,8 +22,9 @@
         },options)
 
         return this.each(function(){
+            $game= $('<div id="game"></div>');
+            $(this).append($game)
             setStartingImages(settings.numOfChests);
-            setLayoutProperties();
             setGameProperties()
             setImageProperties();
             setCaptionProperties();
@@ -59,24 +60,6 @@
                 "background-color": settings.background,
                 "margin": "0 auto",
                 "padding": "10px",
-
-            });
-        }
-
-
-        function setLayoutProperties() {
-            $layover = $("#layover");
-            $layover.css({
-                "position": "fixed",
-                "width": "100%",
-                "height": "25%",
-                "top": "0",
-                "left":"0",
-                "right":"0",
-                "bottom" : "0",
-                "background-color": "rgba(0,0,0,0.5)",
-                "z-index": "9",
-                "cursor": "pointer"
             });
         }
 
@@ -156,7 +139,6 @@
         * claimPrizeButton will display a form for user name and email if they are a winner.
         * Form will default to a page provided, but is customizable for post function.
         */
-        
         function claimPrizeButton(){
             $("#winningButton").click(function(){
                 $button.css("display", "none");
@@ -166,7 +148,6 @@
                 section.append('<form method = "post" action= \"' + settings.gethtml + '\"><label for="winner_name">Name:</label><input type="text" id="winner_name"><br><label for="winner_email">Email:</label><input type="text" id="winner_email"><br><input type = "submit" value="Submit"></form>');
                 console.log("done");
             });
-
         }
     };
 }(jQuery));
