@@ -1,0 +1,11 @@
+@keyframes colorChangeText {
+    50% {background: rgb(227, 10, 10);}
+  }
+
+@keyframes colorChangeGame {
+    50% {background:  rgb(188, 139, 33)}
+  }
+
+
+
+  

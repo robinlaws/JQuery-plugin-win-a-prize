@@ -7,8 +7,8 @@
     $.fn.winPrize = function(options){
         var settings = $.extend( {
             border: '10px solid black',
-            background: 'rgb(202, 208, 214)',
-            imageBorder: '5px solid #555',
+            background: 'black',
+            imageBorder: 'none',
             imageHeight: '100px',
             imageWidth: '100px',
             captionColor: 'rgb(202, 208, 214)',
@@ -17,7 +17,7 @@
             gethtml: 'win_js/winner.html',
             winningCaption: 'CONGRATULATIONS!',
             losingCaption: "SORRY, NOT A WINNER. BETTER LUCK NEXT TIME!",
-            textFont: "cursive"
+            textFont: "Courier new"
 
         },options)
 
@@ -57,7 +57,8 @@
                 "border": settings.border,
                 "justify-content": "center",
                 "text-align": "center",
-                "background-color": settings.background,
+                "background" : settings.background,
+                "animation" : "colorChangeGame 5s infinite",
                 "margin": "0 auto",
                 "padding": "10px",
             });
@@ -82,8 +83,9 @@
             $caption = $("#caption");
             $caption.css({
                 "color": settings.captionColor,
-                "background-color" : settings.captionBackground,
-                "font-family" : settings.textFont
+                "font-family" : settings.textFont,
+                "background" : settings.captionBackground,
+                "animation" : "colorChangeText 1s infinite"
             })
         }
 
@@ -146,7 +148,7 @@
                 const chests = $("#chests");
                 chests.remove();
                 const section = $("#game");
-                section.append('<form method = "post" action= \"' + settings.gethtml + '\"><label for="winner_name">Name:</label><input type="text" id="winner_name"><br><label for="winner_email">Email:</label><input type="text" id="winner_email"><br><input type = "submit" value="Submit"></form>');
+                section.append('<form method = "post" action= \"' + settings.gethtml + '\"><input type="text" id="winner_name" placeholder="Name"><br><input type="text" id="winner_email" placeholder="Email"><br><input type = "submit" value="Submit"></form>');
                 console.log("done");
             });
         }
