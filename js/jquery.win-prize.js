@@ -133,7 +133,7 @@
 
         /*
         * claimPrizeButton will display a form for user name and email if they are a winner.
-        * Form will default to a page provided, but is customizable.
+        * Form will default to a page provided, but is customizable for post function.
         */
         
         function claimPrizeButton(){
