@@ -3,6 +3,7 @@
 Win a prize plugin will allow a user to add a section to a website in which the user can choose a treasure chest to see if it is the winning chest. If it is a winning chest, it will display a winner image and show a button to claim the prize. If it is not the winning chest, it will display a non-winning image and caption.
 
 The plugin will require a section or div element in which they will call the function: winPrize(); 
+        
         ex:
                 add <section id="winPrize"><section> in html
                 in js script, call $("#winPrize).winPrize();
