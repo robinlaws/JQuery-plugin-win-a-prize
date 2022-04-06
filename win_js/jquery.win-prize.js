@@ -16,7 +16,8 @@
             numOfChests: '10',
             gethtml: 'win_js/winner.html',
             winningCaption: 'CONGRATULATIONS!',
-            losingCaption: "SORRY, NOT A WINNER. BETTER LUCK NEXT TIME!"
+            losingCaption: "SORRY, NOT A WINNER. BETTER LUCK NEXT TIME!",
+            textFont: "cursive"
 
         },options)
 
@@ -82,8 +83,8 @@
             $caption.css({
                 "color": settings.captionColor,
                 "background-color" : settings.captionBackground,
-            });
-            
+                "font-family" : settings.textFont
+            })
         }
 
         /* setButtonProperties function to set winning button properties.
