@@ -17,7 +17,7 @@ Once these folders have been saved in your directory, you can call the plugin in
 Files required for this plugin from html are as follows:
 
 
-•	Jquery javascript (file/url): <script src = "https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> (or any jquery link)
+•	Jquery javascript (file/url): <script src = "https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> (or any jquery link/file)
 
 •       Plugin javascript file: “js/jquery.win-prize.js"  <script src = "js/jquery.win-prize.js"></script>
 
