@@ -136,15 +136,7 @@
         * Form will default to a page provided, but is customizable for post function.
         */
         
-        function claimPrizeButton(){
-            $("#winningButton").click(function(){
-                $button.css("display", "none");
-                const chests = $("#chests");
-                chests.remove();
-                const section = $("#game");
-                section.append('<form method = "post" action= \"' + settings.gethtml + '\"><label for="winner_name">Name:</label><input type="text" id="winner_name"><br><label for="winner_email">Email:</label><input type="text" id="winner_email"><br><input type = "submit" value="Submit"></form>');
-                console.log("done");
-            });
+
         }
     };
 }(jQuery));
