@@ -23,6 +23,7 @@
 
         return this.each(function(){
             setStartingImages(settings.numOfChests);
+            setLayoverProperties();
             setSectionProperties()
             setImageProperties();
             setCaptionProperties();
@@ -39,7 +40,7 @@
             $("#game").append($startingImage)
             for (var i=0; i < numOfChests; i++){
                 var image = $('<img class="treasure">');
-                image.attr('src', 'images/closedchest.png');
+                image.attr('src', 'win_images/closedchest.png');
                 image.appendTo("#chests");
             }
             $("#game").append('<h2 id="caption">PICK A CHEST FOR YOUR CHANCE TO WIN</h2>');
@@ -50,13 +51,32 @@
         * setSectionProperties function to set section properties: border and background color are customizable.
         */
         function setSectionProperties() {
-            $section = $("#game");
-            $section.css({
+            $game_div = $("#game");
+            $game_div.css({
                 "border": settings.border,
                 "justify-content": "center",
                 "text-align": "center",
-                "background-color": settings.background
+                "background-color": settings.background,
+                "margin": "0 auto",
+                "padding": "10px",
+
             });
+        }
+
+        function setLayoverProperties() {
+            $layover = $("#layover");
+            $layover.css({
+                "position": "fixed",
+                "width": "100%",
+                "height": "25%",
+                "top": "0",
+                "left":"0",
+                "right":"0",
+                "bottom" : "0",
+                "background-color": "rgba(0,0,0,0.5)",
+                "z-index": "9",
+                "cursor": "pointer"
+            })
         }
 
         /* 
@@ -68,7 +88,7 @@
                 "height": settings.imageHeight,
                 "width": settings.imageWidth,
                 "border": settings.imageBorder,
-                "cursor": "help"
+                "cursor": "pointer"
             });
         }
 
@@ -101,13 +121,13 @@
         function chosenChest(){
             $("#chests img").click(function(){
                 if ($(this).hasClass("winner")){
-                    $(this).attr("src", "images/winningchest.png");
+                    $(this).attr("src", "win_images/winningchest.png");
                     $("#caption").text(settings.winningCaption);
                     $button.css("display", "flex");
                     disableClick();
                     claimPrizeButton();
                 }else{
-                    $(this).first().attr("src", "images/emptychest.png");
+                    $(this).first().attr("src", "win_images/emptychest.png");
                     $("#caption").text(settings.losingCaption);    
                     disableClick();
                 }
