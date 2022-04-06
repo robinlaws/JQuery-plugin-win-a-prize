@@ -27,6 +27,8 @@ NOTE: winner.html is the default page which the form will submit to which only d
 
 
 CUSTOMIZABLE PROPERTIES:
+
+
 •	**border**: Border around the entire game section 
         **default**: 10px solid black
         
