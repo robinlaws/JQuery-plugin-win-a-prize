@@ -110,12 +110,16 @@
                 if ($(this).hasClass("winner")){
                     $(this).attr("src", "win_images/winningchest.png");
                     $("#caption").text(settings.winningCaption);
+                    $("#caption").css("animation", "none");
+                    $("#game").css("animation", "none");
                     $button.css("display", "flex");
                     disableClick();
                     claimPrizeButton();
                 }else{
                     $(this).first().attr("src", "win_images/emptychest.png");
-                    $("#caption").text(settings.losingCaption);    
+                    $("#caption").text(settings.losingCaption);
+                    $("#caption").css("animation", "none");
+                    $("#game").css("animation", "none");    
                     disableClick();
                 }
             });
