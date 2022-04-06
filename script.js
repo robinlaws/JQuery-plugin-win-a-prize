@@ -1,3 +1,1 @@
-$("#winPrize").winPrize({
-    numOfChests: 3
-});
+$("#winPrize").winPrize();
