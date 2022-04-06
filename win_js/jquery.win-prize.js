@@ -15,7 +15,7 @@
             captionColor: 'rgb(202, 208, 214)',
             captionBackground: 'black',
             numOfChests: '10',
-            gethtml: 'js/winner.html',
+            gethtml: 'win_js/winner.html',
             winningCaption: 'CONGRATULATIONS!',
             losingCaption: "SORRY, NOT A WINNER. BETTER LUCK NEXT TIME!"
 
@@ -23,8 +23,8 @@
 
         return this.each(function(){
             setStartingImages(settings.numOfChests);
-            setLayoverProperties();
-            setSectionProperties()
+            setLayoutProperties();
+            setGameProperties()
             setImageProperties();
             setCaptionProperties();
             setButtonProperties();
@@ -50,7 +50,7 @@
         /* 
         * setSectionProperties function to set section properties: border and background color are customizable.
         */
-        function setSectionProperties() {
+        function setGameProperties() {
             $game_div = $("#game");
             $game_div.css({
                 "border": settings.border,
@@ -63,7 +63,8 @@
             });
         }
 
-        function setLayoverProperties() {
+
+        function setLayoutProperties() {
             $layover = $("#layover");
             $layover.css({
                 "position": "fixed",
@@ -76,7 +77,7 @@
                 "background-color": "rgba(0,0,0,0.5)",
                 "z-index": "9",
                 "cursor": "pointer"
-            })
+            });
         }
 
         /* 
@@ -98,7 +99,7 @@
             $caption = $("#caption");
             $caption.css({
                 "color": settings.captionColor,
-                "background-color" : settings.captionBackground
+                "background-color" : settings.captionBackground,
             });
         }
 
