@@ -22,9 +22,9 @@ yourproject
   
   ├──win_js 
   
-  │    ├──jquery.win-prize.js
+  │     ├──jquery.win-prize.js
   
-  │    └──winner.html (optional html shown as default if user wins and enters email)
+  │     └──winner.html (optional html shown as default if user wins and enters email)
   
   ├──win_images
   
