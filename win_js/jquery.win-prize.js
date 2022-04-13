@@ -1,6 +1,11 @@
 /*
 * jquery win-prize plugin to display a game for user to choose a chest and see if they
-* are a winner.
+* are a winner. This can be added to any website section.
+* If you choose the right chest, it will open a form to enter user email and name. 
+* Form post information can be customized through gethtml settings attribute. 
+* See read me file for all customizable options.
+* FOR SUBMISSION PURPOSES: I have console logged the image classes so you can see the winning
+* chest to see full plugin. (line 139)
 */
 (function ($) {
     
@@ -77,7 +82,7 @@
             });
         }
 
-        /* setCaptionProperties function to set caption properties: color and background are customizable.
+        /* setCaptionProperties function to set caption properties: color, text font and background are customizable.
         */
         function setCaptionProperties(){
             $caption = $("#caption");
@@ -131,7 +136,7 @@
         function setWinningChest(numOfChests) {
             let num = Math.floor(Math.random() * numOfChests);
             $("#chests img").eq(num).addClass("winner");
-            console.log($("#chests img"));
+            console.log($("#chests img")); //TO BE REMOVED
         }
 
         /*
