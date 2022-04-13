@@ -4,7 +4,7 @@
 * If you choose the right chest, it will open a form to enter user email and name. 
 * Form post information can be customized through gethtml settings attribute. 
 * See read me file for all customizable options.
-* FOR SUBMISSION PURPOSES: I have console logged the image classes so you can see the winning
+* FOR DEMO PURPOSES: I have console logged the image classes so you can see the winning
 * chest to see full plugin. (line 139)
 */
 (function ($) {
